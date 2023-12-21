@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary's  Diner</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="My Logo"> 
+            </div>
+            <div class="title">
+            <h1>Gary's  Diner</h1>
+            </div>
+            <nav>
+                <button id="button1"><a href="index.html">Home</a></button>
+                <button id="button1"><a href="menu.html">Menu</a></button>
+                <button id="button1"><a href="order.html">Order</a></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <center>
+            <div class="orderForm">
+                <div class="itemSelector">
+                    <label for="item">What would you like to order?</label>
+                    <select name="item" id="item">
+                        <option value="eggs&bacon">Eggs and Bacon</option>
+                        <option value="waffles">Waffles</option>
+                        <option value="FrenchToast">French Toast</option>
+                        <option value="oatmeal">Oatmeal</option>
+                        <option value="poutine">poutine</option>
+                        <option value="bagels">Bagels</option>
+                        <option value="giantBurger">Gary's Giant Burger</option>
+                        <option value="soup">Soup</option>
+                        <option value="steak">Steak</option>
+                        <option value="porkRibs">Pork Ribs</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="turkey">Turkey</option>
+                    </select>
+                    <p id="itemSelectorPriceDisplay"></p>
+                    <button id="add">Add</button>
+                </div>
+                <div id="cart">
+                    <h2>Cart</h2>
+                    <p id="emptyCart">Cart is empty.</p>
+                    <p>Subtotal: <p id="subtotal"></p></p>
+                    <p>HST: <p id="hst"></p></p>
+                    <p>Total: <p id="total"></p></p>
+                    <button id="empty">Empty</button>
+                </div>
+                <div id="customer">
+                    <label for="first">First name: </label>
+                    <input type="text" id="first">
+                    <label for="last">Last name: </label>
+                    <input type="text" id="last">
+                    <label for="phone">Phone: </label>
+                    <input type="number" id="phone">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email">
+                    <label for="address1">Address line 1: </label>
+                    <input type="text" id="address1">
+                    <label for="address2">Address line 2: </label>
+                    <input type="text" id="address2">
+                    <label for="city">City: </label>
+                    <input type="text" id="city">
+                    <label for="province">Province/Territory: </label>
+                    <select name="province" id="province">
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland & Labrador</option>
+                        <option value="NS">Nova Soctia</option>
+                        <option value="NT">Northwest Territory</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="YT">Yukon Territory</option>
+                    </select>
+                    <label for="post">Postal Code: </label>
+                    <input type="text" id="post">
+                </div>
+                <button id="submit">Order</button>
+                <div class="received">
+                    <p>Your order has been received.</p>
+                    <p>Your order number is: <p id="orderIDdisplay"></p>.</p>
+                    <p>Payment of <p id="owed"></p> will be collected on delivery.</p>
+                </div>
+            </div>
+        </center>
+    </main>
+</body>
+</html>
